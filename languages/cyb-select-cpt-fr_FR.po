@@ -1,0 +1,95 @@
+# WordPress Blank Pot
+# Copyright (C) 2014 ...
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Cyb Select CPT v0.1.0\n"
+"Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
+"POT-Creation-Date: 2015-09-16 22:58+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Your Name <you@example.com>\n"
+"Language-Team: Cybernaute.ch <contact@cybernaute.ch>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Textdomain-Support: yesX-Generator: Poedit 1.6.4\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e;esc_html_x:1,2c;esc_html__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_attr__;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;"
+"_x:1,2c;_n:1,2;_n_noop:1,2;__ngettext:1,2;__ngettext_noop:1,2;_c,_nc:4c,1,2\n"
+"X-Poedit-Basepath: ../\n"
+"X-Generator: Poedit 1.7.5\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: cyb-select-cpt.php:40
+msgid "Select Custom Post Types"
+msgstr "Sélectionner les Custom Post Types"
+
+#: cyb-select-cpt.php:40
+msgid "Select CPT"
+msgstr "Sélectionner les CPT"
+
+#: cyb-select-cpt.php:46
+msgid ""
+"Select which Custom Post Types you want to add on your homepage, feeds and "
+"authors page."
+msgstr ""
+"Sélectionner quels Custom Post Types vous désirez afficher sur votre page "
+"d'accueil, dans votre flux RSS et sur vos pages d'auteurs."
+
+#: cyb-select-cpt.php:62
+msgid "Custom Post Types for your homepage"
+msgstr "Custom Post Types pour la page d'accueil"
+
+#: cyb-select-cpt.php:64
+msgid "Custom Post Type for homepage"
+msgstr "Custom Post Type pour page d'accueil"
+
+#: cyb-select-cpt.php:67
+msgid "Custom Post Types for your feeds"
+msgstr "Custom Post Types pour votre flux RSS"
+
+#: cyb-select-cpt.php:69
+msgid "Custom Post Type for feeds"
+msgstr "Custom Post Type pour flux RSS"
+
+#: cyb-select-cpt.php:72
+msgid "Custom Post Types for authors page"
+msgstr "Custom Post Types pour les pages des auteurs"
+
+#: cyb-select-cpt.php:74
+msgid "Custom Post Type for authors"
+msgstr "Custom Post Types pour les auteurs"
+
+#. Plugin Name of the plugin/theme
+msgid "Cyb Select CPT"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://www.cybernaute.ch/plugins/cyb-select-cpt/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Let you select which Custom Post Type to display on homepage, feed and "
+"author page."
+msgstr ""
+"Ce plugin vous permet de sélectionner quel(s) Custom Post Types afficher en "
+"page d'accueil, dans les flux RSS et sur les pages des auteurs."
+
+#. Author of the plugin/theme
+msgid "Cybernaute.ch"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://www.cybernaute.ch"
+msgstr ""
+
+#~ msgid ""
+#~ "Let you change select which Custom Post Type to display on homepage, feed "
+#~ "and author page."
+#~ msgstr ""
+#~ "Ce plugin vous permet de sélectionner quel(s) Custom Post Types afficher "
+#~ "en page d'accueil, dans les flux RSS et sur les pages des auteurs."
