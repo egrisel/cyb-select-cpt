@@ -33,6 +33,9 @@ class CybSelectCPT
 
         /* Load the translations */
         add_action( 'plugins_loaded', array( $this, 'load_plugin_textdomain' ) );
+        
+        /* Add selected CPT for homepage to dashboard */
+        add_filter( 'dashboard_glance_items', array( $this, 'glance_counter' ), 10, 1 );
     }
     
     public function add_admin_menu()
@@ -189,6 +192,33 @@ class CybSelectCPT
     public function load_plugin_textdomain()
     {
         load_plugin_textdomain( 'cyb-select-cpt', FALSE, basename( dirname( __FILE__ ) ) . '/languages/' );
+    }
+    
+    public function glance_counter( $items = array() )
+    {
+        $options = get_option( 'cyb_select_cpt_options' );
+        if ( $options == false || empty( $options['home'] ) )
+            return $items;
+        $post_types = $options['home'];
+        foreach( $post_types as $type => $value ) {
+            if( ! post_type_exists( $type ) ) continue;  
+            if ( $type == 'post' || $type == 'page' ) continue;
+            $num_posts = wp_count_posts( $type );  
+            if( $num_posts ) {  
+                $published = intval( $num_posts->publish );  
+                $post_type = get_post_type_object( $type );  
+                $text = _n( '%s ' . $post_type->labels->singular_name, '%s ' . $post_type->labels->name, $published, 'your_textdomain' );  
+                $text = sprintf( $text, number_format_i18n( $published ) );  
+                if ( current_user_can( $post_type->cap->edit_posts ) ) {  
+                $output = '<a href="edit.php?post_type=' . $post_type->name . '">' . $text . '</a>';  
+                    echo '<li class="post-count ' . $post_type->name . '-count">' . $output . '</li>';  
+                } else {  
+                $output = '<span>' . $text . '</span>';  
+                    echo '<li class="post-count ' . $post_type->name . '-count">' . $output . '</li>';  
+                }  
+            }  
+        } 
+        return $items;
     }
     
 }
